@@ -8,7 +8,8 @@
     <%
         var title = page.title;
 
-        if (is_archive()) {
+        if (is_post()){
+        } else if (is_archive()) {
             title = __('sidebar.archive');
 
             if (is_month()) {
